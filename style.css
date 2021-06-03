@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    transform: 0.7s;
 }
 
 p {
@@ -23,10 +24,11 @@ p {
     flex-direction: column;
 }
 
-.banner .content {
+
+/* .banner .content {
     max-width: 900px;
     text-align: left;
-}
+} */
 
 .btn {
     display: inline-block;
@@ -68,10 +70,11 @@ body {
 
 header {
     position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     width: 100%;
-    padding: 10px 100px;
+    height: 80px;
+    padding: 0 100px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -170,22 +173,10 @@ header .navigation li a:hover {
     color: #333;
 }
 
-/* .content .textBox a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #017143;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-} */
-
 .content .imgBox {
     width: 600px;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 .content .imgBox img {
@@ -661,6 +652,10 @@ section {
 
 @media (max-width: 991px) {
 
+    .banner .content .textBox h2 {
+        margin-top: 130px;
+    }
+
     header,
     header.sticky {
         padding: 10px 20px;
@@ -715,7 +710,7 @@ section {
     }
 
     section {
-        padding: 100px 20px 20px;
+        padding: 100px 10px 10px;
     }
 
     .banner .content {
@@ -801,4 +796,10 @@ section {
     .pricing .box {
         margin-top: 10px;
     }
+
+    /* .banner .content,
+    .banner .content .imgBox,
+    .banner .content .textBox {
+        width: 400px;
+    } */
 }
