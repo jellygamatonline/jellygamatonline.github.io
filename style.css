@@ -9,8 +9,33 @@
     transform: 0.7s;
 }
 
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: #E6E6E6;
+}
+
 p {
-    font-weight: 400;
+    font-weight: 300;
     color: #111;
 }
 
@@ -64,29 +89,16 @@ p {
     color: white; */
 }
 
-body {
+/* body {
     min-height: 1000px;
-}
+} */
 
-header {
-    position: fixed;
-    /* top: 0;
-    left: 0; */
-    width: 100%;
-    height: 80px;
-    padding: 0 100px;
-    z-index: 10000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    background: #E6E6E6;
 
-}
+
 
 header.sticky {
     background: #E6E6E6;
-    padding: 10px 100px;
+    /* padding: 10px 100px; */
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.05);
 }
 
@@ -118,7 +130,8 @@ header .navigation li {
 header .navigation li a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    font-weight: 400;
+    display: inline-block;
 }
 
 header.sticky .navigation li a {
@@ -183,10 +196,7 @@ header .navigation li a:hover {
     max-width: 400px;
 }
 
-section {
-    padding: 100px;
-    min-height: 100vh;
-}
+
 
 .row {
     position: relative;
@@ -652,17 +662,22 @@ section {
 
 @media (max-width: 991px) {
 
-    .banner .content .textBox h2 {
-        margin-top: 150px;
+    section {
+        padding: 100px 10px 10px;
     }
 
-    header,
+
+    header {
+        padding: 10px 20px;
+    }
+
     header.sticky {
         padding: 10px 20px;
     }
 
     header .navigation {
         display: none;
+        width: 100%;
     }
 
     header .navigation.active {
@@ -692,38 +707,42 @@ section {
 
     .menuToggle {
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         background: url(img/home.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+        display: inline-block;
+        right: 20px;
     }
 
     .menuToggle.active {
+        position: fixed;
         background: url(img/home.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
         transition: 0.6s;
+        right: 20px;
     }
 
-    section {
-        padding: 100px 10px 10px;
-    }
 
     .banner .content {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         text-align: center;
     }
 
+    .banner .content .textBox h2 {
+        margin-top: 150px;
+    }
 
-    .content .textBox h2 {
+    .banner .content .textBox h2 {
         font-size: 2.5em;
         margin-bottom: 15px;
         justify-content: center;
@@ -731,7 +750,7 @@ section {
 
     .content .textBox {
         position: relative;
-        max-width: 600px;
+        width: 400px;
         margin-top: -30px;
         margin-left: 10px;
         margin-right: 10px;
@@ -741,10 +760,6 @@ section {
     .content .imgBox {
         max-width: 100%;
         justify-content: center;
-    }
-
-    .content .imgBox img {
-        max-width: 300px;
     }
 
     .banner .content h2 {
@@ -772,7 +787,6 @@ section {
         width: 400px;
     }
 
-    .legalitas .title,
     .legalitas .title .container img {
         width: 400px;
     }
@@ -797,9 +811,4 @@ section {
         margin-top: 10px;
     }
 
-    /* .banner .content,
-    .banner .content .imgBox,
-    .banner .content .textBox {
-        width: 400px;
-    } */
 }
