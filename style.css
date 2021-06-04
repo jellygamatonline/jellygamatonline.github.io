@@ -668,6 +668,7 @@ header .navigation li a:hover {
 
 
     header {
+        width: 100% - 40px;
         padding: 10px 20px;
     }
 
@@ -694,9 +695,14 @@ header .navigation li a:hover {
         text-transform: uppercase;
     }
 
-    header .navigation li {
+    /* header .navigation li {
         margin-left: 0;
         padding-top: 10px;
+    } */
+
+    header .navigation li {
+        list-style: none;
+        margin-left: 30px;
     }
 
     header .navigation li a {
