@@ -19,24 +19,11 @@ section {
     align-items: center;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    padding: 0 100px;
-    z-index: 10000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    background: #E6E6E6;
-}
 
 p {
     font-weight: 300;
     color: #111;
+    font-size: 18px;
 }
 
 .banner {
@@ -89,58 +76,6 @@ p {
     color: white; */
 }
 
-/* body {
-    min-height: 1000px;
-} */
-
-
-
-
-header.sticky {
-    background: #E6E6E6;
-    /* padding: 10px 100px; */
-    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.05);
-}
-
-header .logo {
-    color: #111;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
-}
-
-header.sticky .logo {
-    color: #111;
-}
-
-header .logo span {
-    color: goldenrod;
-}
-
-header .navigation {
-    position: relative;
-    display: flex;
-}
-
-header .navigation li {
-    list-style: none;
-    margin-left: 30px;
-}
-
-header .navigation li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-    display: inline-block;
-}
-
-header.sticky .navigation li a {
-    color: #111;
-}
-
-header .navigation li a:hover {
-    color: #017143;
-}
 
 /* from starbuckPage */
 .about {
@@ -158,7 +93,7 @@ header .navigation li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .content .textBox {
@@ -663,75 +598,7 @@ header .navigation li a:hover {
 @media (max-width: 991px) {
 
     section {
-        padding: 100px 10px 10px;
-    }
-
-
-    header {
-        width: 100% - 40px;
-        padding: 10px 20px;
-    }
-
-    header.sticky {
-        padding: 10px 20px;
-    }
-
-    header .navigation {
-        display: none;
-        width: 100%;
-    }
-
-    header .navigation.active {
-        width: 100%;
-        height: calc(100% - 68px);
-        position: fixed;
-        top: 68px;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #E6E6E6;
-        text-transform: uppercase;
-    }
-
-    /* header .navigation li {
-        margin-left: 0;
-        padding-top: 10px;
-    } */
-
-    header .navigation li {
-        list-style: none;
-        margin-left: 30px;
-    }
-
-    header .navigation li a {
-        text-decoration: none;
-        color: #333;
-        font-size: 1.3em;
-    }
-
-    .menuToggle {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: url(img/home.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        display: inline-block;
-        right: 20px;
-    }
-
-    .menuToggle.active {
-        position: fixed;
-        background: url(img/home.png);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: 0.6s;
-        right: 20px;
+        padding: 30px;
     }
 
 
@@ -764,8 +631,8 @@ header .navigation li a:hover {
     }
 
     .content .imgBox {
-        max-width: 100%;
-        justify-content: center;
+        max-width: 400px;
+        justify-content: left;
     }
 
     .banner .content h2 {
