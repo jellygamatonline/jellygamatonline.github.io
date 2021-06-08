@@ -612,7 +612,8 @@ p {
     }
 
     .banner .content .textBox h2 {
-        margin-top: 0;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 
     .banner .content .textBox h2 {
