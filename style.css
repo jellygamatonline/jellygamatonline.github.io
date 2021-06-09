@@ -338,6 +338,12 @@ p {
     text-decoration: none;
 }
 
+.asli li {
+    justify-content: left
+}
+
+;
+
 /* pertanyaan */
 .pertanyaan .container {
     margin: auto;
@@ -670,10 +676,6 @@ p {
         width: 400px;
     }
 
-    .about .row {
-        width: 400px;
-    }
-
     .legalitas .title .container img {
         width: 400px;
     }
@@ -682,6 +684,9 @@ p {
         width: 400px;
     }
 
+    .about .row {
+        width: 400px;
+    }
 
     .about .row {
         flex-direction: column-reverse;
@@ -694,8 +699,28 @@ p {
         width: 100%;
     }
 
+    .asli .row {
+        width: 400px;
+    }
+
+    .asli .row {
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+
+    .asli .row .col50 {
+        margin-top: 25px;
+        position: relative;
+        width: 100%;
+    }
+
+    .asli .row .col50 p {
+        text-align: center
+    }
+
     .pricing .box {
         margin-top: 10px;
     }
+
 
 }
