@@ -324,6 +324,19 @@ p {
     text-align: center;
 }
 
+.obat h2 {
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.obat p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.obat p a {
+    text-decoration: none;
+}
 
 /* pertanyaan */
 .pertanyaan .container {
