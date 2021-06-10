@@ -414,6 +414,10 @@ p {
     max-height: 500px;
 }
 
+.pertanyaan .container .list {
+    margin-bottom: 15px;
+}
+
 
 /*--------------------------------------------------------------
 # Pricing
